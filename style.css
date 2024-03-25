@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --pale-cyan: hsl(193, 100%, 96%);
+  --dark-cyan: hsl(192, 100%, 9%);
+  --grayish-blue: hsl(208, 11%, 55%);
+}
+
+body {
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: var(--dark-cyan);
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 16px 60px;
+  border-radius: 50px;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+header {
+  background: var(--pale-cyan) url("./images/bg-hero-desktop.svg") no-repeat
+    center/cover;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 3rem 4rem;
+}
+
+.top-header button {
+  background-color: #fff;
+  color: var(--dark-cyan);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.top-header button:hover {
+  background-color: var(--dark-cyan);
+  color: #fff;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  padding-bottom: 4rem;
+}
+
+.hero div {
+  max-width: 45%;
+}
+
+.hero div h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero div p {
+  color: var(--dark-cyan);
+  margin-bottom: 2rem;
+}
+
+.hero div button {
+  background: var(--pink);
+  color: #fff;
+  box-shadow: var(--pink) 0px 2px 8px 0px;
+}
+
+.hero div button:hover {
+  background-color: #fff;
+  color: var(--pink);
+}
+
+.hero img {
+  width: 70%;
+  min-width: 400px;
+}
+
+section {
+  margin-bottom: 20rem;
+}
+
+section .container {
+  display: grid;
+  gap: 3rem;
+  margin-block: 8rem;
+}
+
+section .features {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 9rem;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 3.5rem 2rem;
+  border-radius: 10px;
+}
+
+section .features div {
+  max-width: 46%;
+}
+
+.features h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.features p {
+  color: var(--grayish-blue);
+}
+
+section .features img {
+  width: 35%;
+}
+
+section .features:nth-child(2) {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+footer {
+  background: var(--dark-cyan);
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+
+article {
+  background-color: #fff;
+  padding: 3rem 4rem 4rem 4rem;
+  max-width: 55%;
+  min-width: 320px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: absolute;
+  top: -9rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+article h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+article button {
+  background: var(--pink);
+  color: #fff;
+  font-size: 1.2rem;
+  box-shadow: var(--pink) 0px 2px 8px 0px;
+}
+
+article button:hover {
+  background-color: #fff;
+  color: var(--pink);
+}
+
+.footer-content {
+  padding-top: 12rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+  justify-items: end;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-content > img {
+  filter: brightness(0) invert(1);
+  margin-bottom: 2rem;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info li:first-child img {
+  margin-top: -3rem;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 6rem;
+  font-size: 1.2rem;
+}
+
+.links li a {
+  transition: color 0.3s ease;
+}
+
+.links li a:hover {
+  color: var(--pink);
+}
+
+.social-icons {
+  display: flex;
+  column-gap: 1rem;
+  justify-self: center;
+}
+
+.social-icons li a i {
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons li a i:hover {
+  color: var(--pink);
+  transform: scale(1.1);
+}
+
+small {
+  display: block;
+  text-align: right;
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 1060px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .social-icons {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 888px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero div {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .hero img {
+    min-width: 90%;
+  }
+
+  .features:not(:nth-child(2)) {
+    flex-direction: column-reverse;
+    row-gap: 4rem;
+  }
+
+  section .features:nth-child(2) {
+    flex-direction: column-reverse;
+    row-gap: 4rem;
+  }
+
+  .features div {
+    min-width: 90%;
+    text-align: center;
+  }
+
+  section .features img {
+    width: 90%;
+  }
+
+  article {
+    min-width: 90%;
+    padding: 2rem;
+  }
+
+  article h3 {
+    font-size: 1.5rem;
+  }
+
+  article button {
+    font-size: 1rem;
+  }
+
+  .contact-info,
+  .links {
+    grid-column: 1/3;
+    justify-self: start;
+    max-width: 80%;
+  }
+
+  .links {
+    grid-template-columns: 1fr;
+  }
+
+  .links li:nth-child(1) {
+    order: 1;
+  }
+  .links li:nth-child(2) {
+    order: 4;
+  }
+  .links li:nth-child(3) {
+    order: 2;
+  }
+  .links li:nth-child(4) {
+    order: 5;
+  }
+  .links li:nth-child(5) {
+    order: 3;
+  }
+  .links li:nth-child(6) {
+    order: 6;
+  }
+
+  small {
+    text-align: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .top-header img {
+    width: 9rem;
+  }
+
+  .top-header button {
+    padding: 10px 30px;
+    font-size: 0.8rem;
+  }
+
+  section .features {
+    padding-inline: 1rem;
+  }
+
+  article {
+    padding-inline: 1rem;
+  }
+
+  article h3 {
+    font-size: 1rem;
+  }
+
+  article button {
+    font-size: 0.8rem;
+  }
+}
